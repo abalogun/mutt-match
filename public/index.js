@@ -36,7 +36,7 @@ angular.module('mutt-match', ['ui.router', 'auth0.lock'])
     })
     .state('questionnaire', {
       url: '/questionnaire',
-      component: 'questionnaire',
+      component: 'questionnaire'
       // resolve: {
       //   submit: (questionnaireService) => questionnaireService
       // }

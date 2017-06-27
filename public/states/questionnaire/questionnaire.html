@@ -16,7 +16,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <ng-ng- name="userForm" id="contactForm" novalidate>
+      <ng-form name="userForm" id="contactForm" novalidate>
         <!-- The basics -->
         <H2>The basics...</H2>
         <div class="row control-group">
@@ -91,7 +91,7 @@
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
             <label>Size</label>
-            <input name="dogSize" ng-model="$ctrl.questionnaireData.size" type="number" class="form-control" placeholder="Do you prefer a small(1) or big(5) dog?" id="name" required data-validation-required-message="Please fill this out">
+            <input name="size" ng-model="$ctrl.questionnaireData.size" type="number" class="form-control" placeholder="Do you prefer a small(1) or big(5) dog?" id="name" required data-validation-required-message="Please fill this out">
             <p class="help-block text-danger"></p>
           </div>
         </div>
@@ -105,7 +105,7 @@
         <div class="row control-group">
           <div class="form-group col-xs-12 floating-label-form-group controls">
             <label>Experience</label>
-            <input name="experience" ng-model="$ctrl.questionnaireData.petExperience" type="number" class="form-control" placeholder="How much experience do you have?" id="name" required data-validation-required-message="Please fill this out">
+            <input name="petExperience" ng-model="$ctrl.questionnaireData.petExperience" type="number" class="form-control" placeholder="How much experience do you have?" id="name" required data-validation-required-message="Please fill this out">
             <p class="help-block text-danger"></p>
           </div>
         </div>
@@ -113,10 +113,10 @@
         <div id="success"></div>
         <div class="row">
           <div class="form-group col-xs-12">
-            <input ng-click="$ctrl.submit()" type="submit">
+            <button ng-click="$ctrl.submit()" type="submit" class="btn btn-default">Submit</button>
           </div>
         </div>
-        </ng-form>
+      </ng-form>
     </div>
   </div>
   <hr>
